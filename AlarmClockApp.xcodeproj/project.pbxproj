@@ -3,27 +3,131 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8577083D3363497A9D2B1D5B /* Pods_AlarmClockApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9218AB83FC4DEC2F090D662 /* Pods_AlarmClockApp.framework */; };
+		F5941BBD25DA2F8A0050CEEE /* StopwatchDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5941BBC25DA2F8A0050CEEE /* StopwatchDataManager.swift */; };
+		F5941BC025DB0B9D0050CEEE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5941BBF25DB0B9D0050CEEE /* Colors.xcassets */; };
+		F5941BC825DC6D450050CEEE /* StopwatchLapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5941BC725DC6D450050CEEE /* StopwatchLapModel.swift */; };
+		F5941BCB25DD947C0050CEEE /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5941BCA25DD947C0050CEEE /* AuthenticationService.swift */; };
+		F5D21BB525D03B8D00FFA49B /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BB425D03B8D00FFA49B /* UIBarButtonItem+Extensions.swift */; };
+		F5D21BBE25D0837800FFA49B /* EditAlarmClockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BB825D0837800FFA49B /* EditAlarmClockPresenter.swift */; };
+		F5D21BBF25D0837800FFA49B /* EditAlarmClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BB925D0837800FFA49B /* EditAlarmClockViewController.swift */; };
+		F5D21BC025D0837800FFA49B /* EditAlarmClockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BBA25D0837800FFA49B /* EditAlarmClockBuilder.swift */; };
+		F5D21BC125D0837800FFA49B /* EditAlarmClockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BBB25D0837800FFA49B /* EditAlarmClockInteractor.swift */; };
+		F5D21BC225D0837800FFA49B /* EditAlarmClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BBC25D0837800FFA49B /* EditAlarmClockView.swift */; };
+		F5D21BC325D0837800FFA49B /* EditAlarmClockDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BBD25D0837800FFA49B /* EditAlarmClockDataFlow.swift */; };
+		F5D21BD625D1A2ED00FFA49B /* AddAlarmClockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BD025D1A2ED00FFA49B /* AddAlarmClockPresenter.swift */; };
+		F5D21BD725D1A2ED00FFA49B /* AddAlarmClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BD125D1A2ED00FFA49B /* AddAlarmClockViewController.swift */; };
+		F5D21BD825D1A2ED00FFA49B /* AddAlarmClockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BD225D1A2ED00FFA49B /* AddAlarmClockBuilder.swift */; };
+		F5D21BD925D1A2ED00FFA49B /* AddAlarmClockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BD325D1A2ED00FFA49B /* AddAlarmClockInteractor.swift */; };
+		F5D21BDA25D1A2ED00FFA49B /* AddAlarmClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BD425D1A2ED00FFA49B /* AddAlarmClockView.swift */; };
+		F5D21BDB25D1A2ED00FFA49B /* AddAlarmClockDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BD525D1A2ED00FFA49B /* AddAlarmClockDataFlow.swift */; };
+		F5D21BE125D1A3FB00FFA49B /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BE025D1A3FB00FFA49B /* InputView.swift */; };
+		F5D21BE525D1A41C00FFA49B /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BE425D1A41C00FFA49B /* InputTextField.swift */; };
+		F5D21BE825D1A44B00FFA49B /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BE725D1A44B00FFA49B /* InsetTextField.swift */; };
+		F5D21BEB25D1A46F00FFA49B /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BEA25D1A46F00FFA49B /* CALayer+Extensions.swift */; };
+		F5D21BEE25D1A49100FFA49B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BED25D1A49100FFA49B /* UIColor+Extensions.swift */; };
+		F5D21BF125D1A5DA00FFA49B /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BF025D1A5DA00FFA49B /* Locale+Extension.swift */; };
+		F5D21BF425D1B4D700FFA49B /* TextFieldInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BF325D1B4D700FFA49B /* TextFieldInputValidator.swift */; };
+		F5D21BF925D1CB5F00FFA49B /* AlarmCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BF825D1CB5F00FFA49B /* AlarmCoreDataService.swift */; };
+		F5D21BFE25D2300800FFA49B /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21BFD25D2300800FFA49B /* CoreData.swift */; };
+		F5D21C0425D2305C00FFA49B /* JSON + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C0325D2305C00FFA49B /* JSON + Extensions.swift */; };
+		F5D21C0825D2307800FFA49B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C0725D2307800FFA49B /* APIError.swift */; };
+		F5D21C0E25D2345F00FFA49B /* AlarmClock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C0C25D2345F00FFA49B /* AlarmClock.xcdatamodeld */; };
+		F5D21C1C25D4DD4100FFA49B /* AlertWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C1B25D4DD4100FFA49B /* AlertWindowController.swift */; };
+		F5D21C1F25D4DDEE00FFA49B /* UIAlertViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C1E25D4DDEE00FFA49B /* UIAlertViewController+Extensions.swift */; };
+		F5D21C2325D628CC00FFA49B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C2225D628CC00FFA49B /* NotificationService.swift */; };
+		F5D21C5E25D831B000FFA49B /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5D21C5D25D831B000FFA49B /* bell.mp3 */; };
+		F5D21C6225D8459400FFA49B /* PlayingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C6125D8459400FFA49B /* PlayingService.swift */; };
+		F5D21C7925D94D2E00FFA49B /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C7325D94D2E00FFA49B /* StopwatchViewController.swift */; };
+		F5D21C7A25D94D2E00FFA49B /* StopwatchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C7425D94D2E00FFA49B /* StopwatchBuilder.swift */; };
+		F5D21C7C25D94D2E00FFA49B /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D21C7625D94D2E00FFA49B /* StopwatchView.swift */; };
 		F5EF0FB925CEE7C600882410 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FB825CEE7C600882410 /* AppDelegate.swift */; };
-		F5EF0FBB25CEE7C600882410 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FBA25CEE7C600882410 /* SceneDelegate.swift */; };
-		F5EF0FBD25CEE7C600882410 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FBC25CEE7C600882410 /* ViewController.swift */; };
-		F5EF0FC025CEE7C600882410 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EF0FBE25CEE7C600882410 /* Main.storyboard */; };
 		F5EF0FC225CEE7C700882410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EF0FC125CEE7C700882410 /* Assets.xcassets */; };
 		F5EF0FC525CEE7C700882410 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EF0FC325CEE7C700882410 /* LaunchScreen.storyboard */; };
+		F5EF0FD425CEE80200882410 /* AlarmClockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FCE25CEE80200882410 /* AlarmClockPresenter.swift */; };
+		F5EF0FD525CEE80200882410 /* AlarmClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FCF25CEE80200882410 /* AlarmClockViewController.swift */; };
+		F5EF0FD625CEE80200882410 /* AlarmClockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FD025CEE80200882410 /* AlarmClockBuilder.swift */; };
+		F5EF0FD725CEE80200882410 /* AlarmClockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FD125CEE80200882410 /* AlarmClockInteractor.swift */; };
+		F5EF0FD825CEE80200882410 /* AlarmClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FD225CEE80200882410 /* AlarmClockView.swift */; };
+		F5EF0FD925CEE80200882410 /* AlarmClockDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FD325CEE80200882410 /* AlarmClockDataFlow.swift */; };
+		F5EF0FE725CEEAFE00882410 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FE625CEEAFE00882410 /* AppDependency.swift */; };
+		F5EF0FED25CEEBAA00882410 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FEC25CEEBAA00882410 /* RootViewController.swift */; };
+		F5EF0FF125CEEFAC00882410 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FF025CEEFAC00882410 /* RootBuilder.swift */; };
+		F5EF0FF725CEF33800882410 /* AlarmClockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FF625CEF33800882410 /* AlarmClockCoordinator.swift */; };
+		F5EF0FFB25CEF35E00882410 /* StopwatchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FFA25CEF35E00882410 /* StopwatchCoordinator.swift */; };
+		F5EF100025CEF70600882410 /* UITabBarItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF0FFF25CEF70600882410 /* UITabBarItem+Extensions.swift */; };
+		F5EF100625CF0A0E00882410 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF100525CF0A0E00882410 /* UITableView+Extensions.swift */; };
+		F5EF100A25CF0A2E00882410 /* AlarmClockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF100925CF0A2E00882410 /* AlarmClockCell.swift */; };
+		F5EF100D25CF0AFC00882410 /* AlarmClockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF100C25CF0AFC00882410 /* AlarmClockDataManager.swift */; };
+		F5EF101125CF0BF700882410 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF101025CF0BF700882410 /* AlarmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5666EDF0EDF943BBC8B58AF8 /* Pods-AlarmClockApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmClockApp.debug.xcconfig"; path = "Target Support Files/Pods-AlarmClockApp/Pods-AlarmClockApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8916926996C2DCA568085E33 /* Pods-AlarmClockApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlarmClockApp.release.xcconfig"; path = "Target Support Files/Pods-AlarmClockApp/Pods-AlarmClockApp.release.xcconfig"; sourceTree = "<group>"; };
+		A9218AB83FC4DEC2F090D662 /* Pods_AlarmClockApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlarmClockApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5941BBC25DA2F8A0050CEEE /* StopwatchDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchDataManager.swift; sourceTree = "<group>"; };
+		F5941BBF25DB0B9D0050CEEE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F5941BC725DC6D450050CEEE /* StopwatchLapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchLapModel.swift; sourceTree = "<group>"; };
+		F5941BCA25DD947C0050CEEE /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		F5D21BB425D03B8D00FFA49B /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		F5D21BB825D0837800FFA49B /* EditAlarmClockPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmClockPresenter.swift; sourceTree = "<group>"; };
+		F5D21BB925D0837800FFA49B /* EditAlarmClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmClockViewController.swift; sourceTree = "<group>"; };
+		F5D21BBA25D0837800FFA49B /* EditAlarmClockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmClockBuilder.swift; sourceTree = "<group>"; };
+		F5D21BBB25D0837800FFA49B /* EditAlarmClockInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmClockInteractor.swift; sourceTree = "<group>"; };
+		F5D21BBC25D0837800FFA49B /* EditAlarmClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmClockView.swift; sourceTree = "<group>"; };
+		F5D21BBD25D0837800FFA49B /* EditAlarmClockDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlarmClockDataFlow.swift; sourceTree = "<group>"; };
+		F5D21BD025D1A2ED00FFA49B /* AddAlarmClockPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmClockPresenter.swift; sourceTree = "<group>"; };
+		F5D21BD125D1A2ED00FFA49B /* AddAlarmClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmClockViewController.swift; sourceTree = "<group>"; };
+		F5D21BD225D1A2ED00FFA49B /* AddAlarmClockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmClockBuilder.swift; sourceTree = "<group>"; };
+		F5D21BD325D1A2ED00FFA49B /* AddAlarmClockInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmClockInteractor.swift; sourceTree = "<group>"; };
+		F5D21BD425D1A2ED00FFA49B /* AddAlarmClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmClockView.swift; sourceTree = "<group>"; };
+		F5D21BD525D1A2ED00FFA49B /* AddAlarmClockDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmClockDataFlow.swift; sourceTree = "<group>"; };
+		F5D21BE025D1A3FB00FFA49B /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		F5D21BE425D1A41C00FFA49B /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		F5D21BE725D1A44B00FFA49B /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		F5D21BEA25D1A46F00FFA49B /* CALayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
+		F5D21BED25D1A49100FFA49B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		F5D21BF025D1A5DA00FFA49B /* Locale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
+		F5D21BF325D1B4D700FFA49B /* TextFieldInputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInputValidator.swift; sourceTree = "<group>"; };
+		F5D21BF825D1CB5F00FFA49B /* AlarmCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCoreDataService.swift; sourceTree = "<group>"; };
+		F5D21BFD25D2300800FFA49B /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		F5D21C0325D2305C00FFA49B /* JSON + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSON + Extensions.swift"; sourceTree = "<group>"; };
+		F5D21C0725D2307800FFA49B /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F5D21C0D25D2345F00FFA49B /* AlarmClock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmClock.xcdatamodel; sourceTree = "<group>"; };
+		F5D21C1B25D4DD4100FFA49B /* AlertWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWindowController.swift; sourceTree = "<group>"; };
+		F5D21C1E25D4DDEE00FFA49B /* UIAlertViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F5D21C2225D628CC00FFA49B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F5D21C5D25D831B000FFA49B /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		F5D21C6125D8459400FFA49B /* PlayingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingService.swift; sourceTree = "<group>"; };
+		F5D21C7325D94D2E00FFA49B /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		F5D21C7425D94D2E00FFA49B /* StopwatchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchBuilder.swift; sourceTree = "<group>"; };
+		F5D21C7625D94D2E00FFA49B /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		F5EF0FB525CEE7C600882410 /* AlarmClockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EF0FB825CEE7C600882410 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5EF0FBA25CEE7C600882410 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5EF0FBC25CEE7C600882410 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5EF0FBF25CEE7C600882410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5EF0FC125CEE7C700882410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5EF0FC425CEE7C700882410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5EF0FC625CEE7C700882410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EF0FCE25CEE80200882410 /* AlarmClockPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockPresenter.swift; sourceTree = "<group>"; };
+		F5EF0FCF25CEE80200882410 /* AlarmClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockViewController.swift; sourceTree = "<group>"; };
+		F5EF0FD025CEE80200882410 /* AlarmClockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockBuilder.swift; sourceTree = "<group>"; };
+		F5EF0FD125CEE80200882410 /* AlarmClockInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockInteractor.swift; sourceTree = "<group>"; };
+		F5EF0FD225CEE80200882410 /* AlarmClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockView.swift; sourceTree = "<group>"; };
+		F5EF0FD325CEE80200882410 /* AlarmClockDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockDataFlow.swift; sourceTree = "<group>"; };
+		F5EF0FE625CEEAFE00882410 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		F5EF0FEC25CEEBAA00882410 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F5EF0FF025CEEFAC00882410 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		F5EF0FF625CEF33800882410 /* AlarmClockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockCoordinator.swift; sourceTree = "<group>"; };
+		F5EF0FFA25CEF35E00882410 /* StopwatchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchCoordinator.swift; sourceTree = "<group>"; };
+		F5EF0FFF25CEF70600882410 /* UITabBarItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Extensions.swift"; sourceTree = "<group>"; };
+		F5EF100525CF0A0E00882410 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		F5EF100925CF0A2E00882410 /* AlarmClockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockCell.swift; sourceTree = "<group>"; };
+		F5EF100C25CF0AFC00882410 /* AlarmClockDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockDataManager.swift; sourceTree = "<group>"; };
+		F5EF101025CF0BF700882410 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +135,201 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8577083D3363497A9D2B1D5B /* Pods_AlarmClockApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D08175D1CD2AF821FE5E2AC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9218AB83FC4DEC2F090D662 /* Pods_AlarmClockApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5D21BB725D0834F00FFA49B /* EditAlarmClock */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BBD25D0837800FFA49B /* EditAlarmClockDataFlow.swift */,
+				F5D21BC925D083A800FFA49B /* View */,
+				F5D21BC825D0839700FFA49B /* Interactor */,
+				F5D21BC725D0838B00FFA49B /* Presenter */,
+				F5D21BC625D0837E00FFA49B /* Controller */,
+				F5D21BBA25D0837800FFA49B /* EditAlarmClockBuilder.swift */,
+			);
+			path = EditAlarmClock;
+			sourceTree = "<group>";
+		};
+		F5D21BC625D0837E00FFA49B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BB925D0837800FFA49B /* EditAlarmClockViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5D21BC725D0838B00FFA49B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BB825D0837800FFA49B /* EditAlarmClockPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F5D21BC825D0839700FFA49B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BBB25D0837800FFA49B /* EditAlarmClockInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F5D21BC925D083A800FFA49B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BBC25D0837800FFA49B /* EditAlarmClockView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5D21BCB25D1A29D00FFA49B /* AddAlarmClock */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BD525D1A2ED00FFA49B /* AddAlarmClockDataFlow.swift */,
+				F5D21BCF25D1A2D800FFA49B /* View */,
+				F5D21BCE25D1A2C800FFA49B /* Interactor */,
+				F5D21BCD25D1A2BF00FFA49B /* Presenter */,
+				F5D21BCC25D1A2B200FFA49B /* Controller */,
+				F5D21BD225D1A2ED00FFA49B /* AddAlarmClockBuilder.swift */,
+			);
+			path = AddAlarmClock;
+			sourceTree = "<group>";
+		};
+		F5D21BCC25D1A2B200FFA49B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BD125D1A2ED00FFA49B /* AddAlarmClockViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5D21BCD25D1A2BF00FFA49B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BD025D1A2ED00FFA49B /* AddAlarmClockPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F5D21BCE25D1A2C800FFA49B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BD325D1A2ED00FFA49B /* AddAlarmClockInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F5D21BCF25D1A2D800FFA49B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BD425D1A2ED00FFA49B /* AddAlarmClockView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5D21BDF25D1A3A300FFA49B /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BE025D1A3FB00FFA49B /* InputView.swift */,
+				F5D21BE425D1A41C00FFA49B /* InputTextField.swift */,
+				F5D21BE725D1A44B00FFA49B /* InsetTextField.swift */,
+				F5D21C1B25D4DD4100FFA49B /* AlertWindowController.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		F5D21BF625D1CB2200FFA49B /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BF725D1CB3000FFA49B /* AlarmClock */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		F5D21BF725D1CB3000FFA49B /* AlarmClock */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21C2225D628CC00FFA49B /* NotificationService.swift */,
+				F5D21BF825D1CB5F00FFA49B /* AlarmCoreDataService.swift */,
+				F5D21C6125D8459400FFA49B /* PlayingService.swift */,
+				F5941BCA25DD947C0050CEEE /* AuthenticationService.swift */,
+			);
+			path = AlarmClock;
+			sourceTree = "<group>";
+		};
+		F5D21BFC25D22FF300FFA49B /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21BFD25D2300800FFA49B /* CoreData.swift */,
+				F5D21C0125D2303700FFA49B /* Extensions */,
+				F5D21C0225D2304300FFA49B /* API */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		F5D21C0125D2303700FFA49B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21C0325D2305C00FFA49B /* JSON + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5D21C0225D2304300FFA49B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21C0725D2307800FFA49B /* APIError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F5D21C7125D94CF700FFA49B /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21C8325D94D5700FFA49B /* View */,
+				F5D21C8025D94D3500FFA49B /* Controller */,
+				F5D21C7425D94D2E00FFA49B /* StopwatchBuilder.swift */,
+			);
+			path = Stopwatch;
+			sourceTree = "<group>";
+		};
+		F5D21C8025D94D3500FFA49B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21C7325D94D2E00FFA49B /* StopwatchViewController.swift */,
+				F5941BBC25DA2F8A0050CEEE /* StopwatchDataManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5D21C8325D94D5700FFA49B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21C7625D94D2E00FFA49B /* StopwatchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F5EF0FAC25CEE7C600882410 = {
 			isa = PBXGroup;
 			children = (
 				F5EF0FB725CEE7C600882410 /* AlarmClockApp */,
 				F5EF0FB625CEE7C600882410 /* Products */,
+				F6B931CE0576C3B44B848FD9 /* Pods */,
+				D08175D1CD2AF821FE5E2AC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +345,148 @@
 			isa = PBXGroup;
 			children = (
 				F5EF0FB825CEE7C600882410 /* AppDelegate.swift */,
-				F5EF0FBA25CEE7C600882410 /* SceneDelegate.swift */,
-				F5EF0FBC25CEE7C600882410 /* ViewController.swift */,
-				F5EF0FBE25CEE7C600882410 /* Main.storyboard */,
-				F5EF0FC125CEE7C700882410 /* Assets.xcassets */,
-				F5EF0FC325CEE7C700882410 /* LaunchScreen.storyboard */,
-				F5EF0FC625CEE7C700882410 /* Info.plist */,
+				F5EF0FE625CEEAFE00882410 /* AppDependency.swift */,
+				F5EF0FFD25CEF6C300882410 /* PresentationLayer */,
+				F5EF0FCD25CEE7D900882410 /* AlarmClock */,
+				F5D21BCB25D1A29D00FFA49B /* AddAlarmClock */,
+				F5D21BB725D0834F00FFA49B /* EditAlarmClock */,
+				F5D21C7125D94CF700FFA49B /* Stopwatch */,
+				F5D21BF625D1CB2200FFA49B /* BusinessLogicLayer */,
+				F5D21BFC25D22FF300FFA49B /* CoreLayer */,
+				F5EF100F25CF0BD300882410 /* ModelsLayer */,
+				F5EF0FE025CEE85500882410 /* Resources */,
 			);
 			path = AlarmClockApp;
+			sourceTree = "<group>";
+		};
+		F5EF0FCD25CEE7D900882410 /* AlarmClock */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FD325CEE80200882410 /* AlarmClockDataFlow.swift */,
+				F5EF0FDF25CEE83E00882410 /* View */,
+				F5EF0FDD25CEE81700882410 /* Interactor */,
+				F5EF0FDC25CEE80800882410 /* Presenter */,
+				F5EF0FDE25CEE82F00882410 /* Controller */,
+				F5EF0FD025CEE80200882410 /* AlarmClockBuilder.swift */,
+			);
+			path = AlarmClock;
+			sourceTree = "<group>";
+		};
+		F5EF0FDC25CEE80800882410 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FCE25CEE80200882410 /* AlarmClockPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F5EF0FDD25CEE81700882410 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FD125CEE80200882410 /* AlarmClockInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F5EF0FDE25CEE82F00882410 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FCF25CEE80200882410 /* AlarmClockViewController.swift */,
+				F5EF100C25CF0AFC00882410 /* AlarmClockDataManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5EF0FDF25CEE83E00882410 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FD225CEE80200882410 /* AlarmClockView.swift */,
+				F5EF100925CF0A2E00882410 /* AlarmClockCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5EF0FE025CEE85500882410 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5D21C5D25D831B000FFA49B /* bell.mp3 */,
+				F5EF0FC325CEE7C700882410 /* LaunchScreen.storyboard */,
+				F5EF0FC625CEE7C700882410 /* Info.plist */,
+				F5D21C0C25D2345F00FFA49B /* AlarmClock.xcdatamodeld */,
+				F5EF0FC125CEE7C700882410 /* Assets.xcassets */,
+				F5941BBF25DB0B9D0050CEEE /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5EF0FE925CEEB5900882410 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FEB25CEEB8300882410 /* ViewController */,
+				F5EF0FEA25CEEB6000882410 /* Coordinator */,
+				F5EF0FF025CEEFAC00882410 /* RootBuilder.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F5EF0FEA25CEEB6000882410 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FF625CEF33800882410 /* AlarmClockCoordinator.swift */,
+				F5EF0FFA25CEF35E00882410 /* StopwatchCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F5EF0FEB25CEEB8300882410 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FEC25CEEBAA00882410 /* RootViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F5EF0FFD25CEF6C300882410 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FFE25CEF6D600882410 /* Extensions */,
+				F5D21BDF25D1A3A300FFA49B /* UIComponents */,
+				F5EF0FE925CEEB5900882410 /* Root */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		F5EF0FFE25CEF6D600882410 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF0FFF25CEF70600882410 /* UITabBarItem+Extensions.swift */,
+				F5EF100525CF0A0E00882410 /* UITableView+Extensions.swift */,
+				F5D21BB425D03B8D00FFA49B /* UIBarButtonItem+Extensions.swift */,
+				F5D21BEA25D1A46F00FFA49B /* CALayer+Extensions.swift */,
+				F5D21BED25D1A49100FFA49B /* UIColor+Extensions.swift */,
+				F5D21BF025D1A5DA00FFA49B /* Locale+Extension.swift */,
+				F5D21BF325D1B4D700FFA49B /* TextFieldInputValidator.swift */,
+				F5D21C1E25D4DDEE00FFA49B /* UIAlertViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5EF100F25CF0BD300882410 /* ModelsLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F5EF101025CF0BF700882410 /* AlarmModel.swift */,
+				F5941BC725DC6D450050CEEE /* StopwatchLapModel.swift */,
+			);
+			path = ModelsLayer;
+			sourceTree = "<group>";
+		};
+		F6B931CE0576C3B44B848FD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5666EDF0EDF943BBC8B58AF8 /* Pods-AlarmClockApp.debug.xcconfig */,
+				8916926996C2DCA568085E33 /* Pods-AlarmClockApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +496,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5EF0FC925CEE7C700882410 /* Build configuration list for PBXNativeTarget "AlarmClockApp" */;
 			buildPhases = (
+				E4B6AD770A127EB4CA112896 /* [CP] Check Pods Manifest.lock */,
 				F5EF0FB125CEE7C600882410 /* Sources */,
 				F5EF0FB225CEE7C600882410 /* Frameworks */,
 				F5EF0FB325CEE7C600882410 /* Resources */,
+				FD41A5BD79E8D8508CA00EDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,35 +549,119 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5EF0FC525CEE7C700882410 /* LaunchScreen.storyboard in Resources */,
+				F5941BC025DB0B9D0050CEEE /* Colors.xcassets in Resources */,
 				F5EF0FC225CEE7C700882410 /* Assets.xcassets in Resources */,
-				F5EF0FC025CEE7C600882410 /* Main.storyboard in Resources */,
+				F5D21C5E25D831B000FFA49B /* bell.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6AD770A127EB4CA112896 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlarmClockApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD41A5BD79E8D8508CA00EDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlarmClockApp/Pods-AlarmClockApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlarmClockApp/Pods-AlarmClockApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlarmClockApp/Pods-AlarmClockApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5EF0FB125CEE7C600882410 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5EF0FBD25CEE7C600882410 /* ViewController.swift in Sources */,
+				F5D21BB525D03B8D00FFA49B /* UIBarButtonItem+Extensions.swift in Sources */,
+				F5D21BFE25D2300800FFA49B /* CoreData.swift in Sources */,
+				F5D21BF125D1A5DA00FFA49B /* Locale+Extension.swift in Sources */,
+				F5D21BE125D1A3FB00FFA49B /* InputView.swift in Sources */,
+				F5EF0FD925CEE80200882410 /* AlarmClockDataFlow.swift in Sources */,
+				F5D21C7C25D94D2E00FFA49B /* StopwatchView.swift in Sources */,
+				F5D21BD825D1A2ED00FFA49B /* AddAlarmClockBuilder.swift in Sources */,
+				F5EF100625CF0A0E00882410 /* UITableView+Extensions.swift in Sources */,
+				F5D21BE825D1A44B00FFA49B /* InsetTextField.swift in Sources */,
+				F5941BC825DC6D450050CEEE /* StopwatchLapModel.swift in Sources */,
+				F5D21C6225D8459400FFA49B /* PlayingService.swift in Sources */,
+				F5941BCB25DD947C0050CEEE /* AuthenticationService.swift in Sources */,
+				F5D21BD725D1A2ED00FFA49B /* AddAlarmClockViewController.swift in Sources */,
+				F5D21C1C25D4DD4100FFA49B /* AlertWindowController.swift in Sources */,
+				F5D21BC225D0837800FFA49B /* EditAlarmClockView.swift in Sources */,
+				F5D21BF925D1CB5F00FFA49B /* AlarmCoreDataService.swift in Sources */,
+				F5EF0FD525CEE80200882410 /* AlarmClockViewController.swift in Sources */,
+				F5D21BE525D1A41C00FFA49B /* InputTextField.swift in Sources */,
+				F5EF0FED25CEEBAA00882410 /* RootViewController.swift in Sources */,
+				F5D21BEE25D1A49100FFA49B /* UIColor+Extensions.swift in Sources */,
+				F5D21C0425D2305C00FFA49B /* JSON + Extensions.swift in Sources */,
+				F5D21C1F25D4DDEE00FFA49B /* UIAlertViewController+Extensions.swift in Sources */,
+				F5D21C2325D628CC00FFA49B /* NotificationService.swift in Sources */,
+				F5D21BEB25D1A46F00FFA49B /* CALayer+Extensions.swift in Sources */,
+				F5EF100D25CF0AFC00882410 /* AlarmClockDataManager.swift in Sources */,
+				F5EF0FD425CEE80200882410 /* AlarmClockPresenter.swift in Sources */,
+				F5D21BC325D0837800FFA49B /* EditAlarmClockDataFlow.swift in Sources */,
+				F5EF0FD825CEE80200882410 /* AlarmClockView.swift in Sources */,
+				F5D21BDA25D1A2ED00FFA49B /* AddAlarmClockView.swift in Sources */,
+				F5D21C0E25D2345F00FFA49B /* AlarmClock.xcdatamodeld in Sources */,
 				F5EF0FB925CEE7C600882410 /* AppDelegate.swift in Sources */,
-				F5EF0FBB25CEE7C600882410 /* SceneDelegate.swift in Sources */,
+				F5941BBD25DA2F8A0050CEEE /* StopwatchDataManager.swift in Sources */,
+				F5D21BDB25D1A2ED00FFA49B /* AddAlarmClockDataFlow.swift in Sources */,
+				F5D21BD925D1A2ED00FFA49B /* AddAlarmClockInteractor.swift in Sources */,
+				F5EF0FD625CEE80200882410 /* AlarmClockBuilder.swift in Sources */,
+				F5D21C0825D2307800FFA49B /* APIError.swift in Sources */,
+				F5D21BD625D1A2ED00FFA49B /* AddAlarmClockPresenter.swift in Sources */,
+				F5D21BC025D0837800FFA49B /* EditAlarmClockBuilder.swift in Sources */,
+				F5EF101125CF0BF700882410 /* AlarmModel.swift in Sources */,
+				F5D21C7A25D94D2E00FFA49B /* StopwatchBuilder.swift in Sources */,
+				F5D21C7925D94D2E00FFA49B /* StopwatchViewController.swift in Sources */,
+				F5EF0FF125CEEFAC00882410 /* RootBuilder.swift in Sources */,
+				F5D21BC125D0837800FFA49B /* EditAlarmClockInteractor.swift in Sources */,
+				F5EF100025CEF70600882410 /* UITabBarItem+Extensions.swift in Sources */,
+				F5EF100A25CF0A2E00882410 /* AlarmClockCell.swift in Sources */,
+				F5EF0FE725CEEAFE00882410 /* AppDependency.swift in Sources */,
+				F5D21BBE25D0837800FFA49B /* EditAlarmClockPresenter.swift in Sources */,
+				F5EF0FD725CEE80200882410 /* AlarmClockInteractor.swift in Sources */,
+				F5EF0FFB25CEF35E00882410 /* StopwatchCoordinator.swift in Sources */,
+				F5EF0FF725CEF33800882410 /* AlarmClockCoordinator.swift in Sources */,
+				F5D21BBF25D0837800FFA49B /* EditAlarmClockViewController.swift in Sources */,
+				F5D21BF425D1B4D700FFA49B /* TextFieldInputValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F5EF0FBE25CEE7C600882410 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5EF0FBF25CEE7C600882410 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5EF0FC325CEE7C700882410 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,12 +791,13 @@
 		};
 		F5EF0FCA25CEE7C700882410 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5666EDF0EDF943BBC8B58AF8 /* Pods-AlarmClockApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TPX6LM949;
-				INFOPLIST_FILE = AlarmClockApp/Info.plist;
+				INFOPLIST_FILE = AlarmClockApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +805,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MaxLoktev.AlarmClockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F5EF0FCB25CEE7C700882410 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8916926996C2DCA568085E33 /* Pods-AlarmClockApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TPX6LM949;
-				INFOPLIST_FILE = AlarmClockApp/Info.plist;
+				INFOPLIST_FILE = AlarmClockApp/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +825,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MaxLoktev.AlarmClockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +851,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5D21C0C25D2345F00FFA49B /* AlarmClock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5D21C0D25D2345F00FFA49B /* AlarmClock.xcdatamodel */,
+			);
+			currentVersion = F5D21C0D25D2345F00FFA49B /* AlarmClock.xcdatamodel */;
+			path = AlarmClock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F5EF0FAD25CEE7C600882410 /* Project object */;
 }
